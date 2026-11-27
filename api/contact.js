@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 function escapeHtml(text) {
     if (!text) return '';
@@ -10,7 +10,7 @@ function escapeHtml(text) {
         .replace(/'/g, '&#039;');
 }
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
     res.setHeader('Access-Control-Allow-Credentials', true);
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,POST');
@@ -115,4 +115,4 @@ module.exports = async (req, res) => {
             message: 'An error occurred while sending your message. Please try again later.'
         });
     }
-};
+}

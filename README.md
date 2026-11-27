@@ -30,7 +30,7 @@ Personal portfolio website showcasing web development projects, skills, and inte
 
 3. **Start the local server**:
    ```bash
-   npm start
+   npm run dev
    ```
    Open [http://localhost:5000](http://localhost:5000) in your browser. The contact form will submit to `/api/contact`, send you the message, and send an automated thank-you note to the visitor.
 
@@ -43,7 +43,7 @@ Personal portfolio website showcasing web development projects, skills, and inte
 2. Go to [Vercel](https://vercel.com/) and click **"Add New Project"** -> import your GitHub repository.
 3. In **Environment Variables**, add:
    - `EMAIL_USER`: `sajeeshalexander@gmail.com`
-   - `EMAIL_PASS`: `jekazfmoixrixojk`
+   - `EMAIL_PASS`: your Gmail app password
 4. Click **Deploy**. Vercel will host both your portfolio and the serverless email API (`api/contact.js`) seamlessly!
 
 ### Option 2: Render.com / Railway (Deploy Backend with GitHub Pages)

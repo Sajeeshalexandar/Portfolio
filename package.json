@@ -1,19 +1,36 @@
 {
   "name": "sajeeshalexandar-portfolio",
   "version": "1.0.0",
-  "description": "Portfolio website of Sajeesh Alexandar with email contact service",
-  "main": "server.js",
+  "private": true,
+  "type": "module",
+  "description": "Portfolio website of Sajeesh Alexandar built with React and Vercel Serverless Functions",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
   },
-  "keywords": ["portfolio", "nodemailer", "contact-form"],
+  "keywords": [
+    "portfolio",
+    "react",
+    "vite",
+    "vercel",
+    "nodemailer",
+    "contact-form"
+  ],
   "author": "Sajeesh Alexandar",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "nodemailer": "^6.9.13"
+    "@fortawesome/fontawesome-free": "^7.0.1",
+    "nodemailer": "^6.9.13",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "oxlint": "^1.94.0",
+    "vite": "^8.4.0"
   }
 }
